@@ -1,0 +1,14 @@
+<script type="text/javascript">
+            $(document).on("click", ".open-Modal", function () {
+            var myDNI = $(this).data('id');
+            $(".modal-body #memi").val( myDNI );
+            });
+        </script>
+
+        <td>
+                                                        <a title="Click para editar el producto" ><button class=" open-Modal btn btn-warning" data-toggle="modal" data-id="<?php echo $fila[0];?>" data-target="#Modal_editar"><i class="fa fa-edit"></i> Editar </button> 
+                                                        </a>
+                                                       
+                                                        <a href="#" id="<?php echo $fila[0]; ?>" class="delbutton" title="Click para borrar el producto"><button class="btn btn-danger"><i class="fa fa-trash-o"></i> Eliminar</button>
+                                                        </a>
+                                                    </td>
